@@ -12,7 +12,7 @@ Provide an address and get few parts of the Address (It uses Google API)
 - Provide a key value pair as "addr" and your choice of address and SEND the request
 - It will return the State , Latitude and Longitude
 
-### Sample Input and Outputs
+### Sample Inputs and Results
   
 - **Input :** "2900 Westside Pkwy , 30005"  <br />
   **Result:** "[{'Input':'2900 Westside Pkwy , 30005','State':'Georgia','Latitude':34.0860298,'Longitude':-84.2740195}]"
