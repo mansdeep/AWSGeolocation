@@ -14,7 +14,7 @@ Provide an address and get few parts of the Address (It uses Google API)
 
 ### Sample Input and Outputs
   
-  a) 2900 Westside Pkwy , 30005" will return 
+  Input 2900 Westside Pkwy , 30005" will return 
             "[{'Input':'2900 Westside Pkwy , 30005','State':'Georgia','Latitude':34.0860298,'Longitude':-84.2740195}]"
           
   b) "Calcutta University" will return 
@@ -23,10 +23,12 @@ Provide an address and get few parts of the Address (It uses Google API)
   c) "Orlando fl" will return
             "[{'Input':'orlando fl','State':'Florida','Latitude':28.5383355,'Longitude':-81.3792365}]"
 
-### Steps Involved
+
+## Steps Involved
 - Receive Address from User and pass it to teh AWS API Gateway
 - API Gateway in turn invokes a Lambda Function (Python) - Please refer to the code file function.py
 - Inside Lambda function it calls Google Geocoding API and parses the result into State, Latitude and Longitude
 - These values are returned to the calling client. 
 
-** Note : The plan for this project is to obtain State using [US State shapefile](https://www.census.gov/programs-surveys/geography.html).  As this is authentic dataset containing information on State borders. The shape file has been loaded into the POSTGIS enables PostgreSQL database in AWS. But, due to some technical difficulty with this dataset the State can't be identified from Latitude and Longitude at the moment. So as a temporary solution, the State has been obtained from Google API. This is not the right way as, google is not the authority for state borders. We will continue to work on this and fix this problem .
+## Note 
+The plan for this project is to obtain State using [US State shapefile](https://www.census.gov/programs-surveys/geography.html).  As this is authentic dataset containing information on State borders. The shape file has been loaded into the POSTGIS enables PostgreSQL database in AWS. But, due to some technical difficulty with this dataset the State can't be identified from Latitude and Longitude at the moment. So as a temporary solution, the State has been obtained from Google API. This is not the right way as, google is not the authority for state borders. We will continue to work on this and fix this problem .
