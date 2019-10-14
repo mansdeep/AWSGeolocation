@@ -7,23 +7,20 @@ Provide an address and get few parts of the Address (It uses Google API)
 2) Provide an address and click on "Find State" . It will return the State , Latitude and Longitude
 
 ### Using Postman
-- Please use GET method with site URL as
+- Please use GET method with the following site URL <br />
         https://r0j1b44db9.execute-api.us-east-2.amazonaws.com/default/GetStateFromAddress 
 - Provide a key value pair as "addr" and your choice of address and SEND the request
 - It will return the State , Latitude and Longitude
 
 ### Sample Input and Outputs
   
-- **Input :** "2900 Westside Pkwy , 30005"  
-
+- **Input :** "2900 Westside Pkwy , 30005"  <br />
   **Result:** "[{'Input':'2900 Westside Pkwy , 30005','State':'Georgia','Latitude':34.0860298,'Longitude':-84.2740195}]"
           
-- **Input :** "Calcutta University"
-
+- **Input :** "Calcutta University"<br />
   **Result:** "[{'Input':'Calcutta University','State':'West Bengal','Latitude':22.5750862,'Longitude':88.3629188}]"
           
-- **Input :** "Orlando fl"
-
+- **Input :** "Orlando fl"<br />
   **Result:** "[{'Input':'orlando fl','State':'Florida','Latitude':28.5383355,'Longitude':-81.3792365}]"
 
 
