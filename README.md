@@ -7,21 +7,24 @@ Provide an address and get few parts of the Address (It uses Google API)
 2) Provide an address and click on "Find State" . It will return the State , Latitude and Longitude
 
 ### Using Postman
-1) Please use GET method with site URL as
+- Please use GET method with site URL as
         https://r0j1b44db9.execute-api.us-east-2.amazonaws.com/default/GetStateFromAddress 
-2) Provide a key value pair as "addr" and your choice of address and SEND the request
-3) It will return the State , Latitude and Longitude
+- Provide a key value pair as "addr" and your choice of address and SEND the request
+- It will return the State , Latitude and Longitude
 
 ### Sample Input and Outputs
   
-  Input 2900 Westside Pkwy , 30005" will return 
-            "[{'Input':'2900 Westside Pkwy , 30005','State':'Georgia','Latitude':34.0860298,'Longitude':-84.2740195}]"
+- **Input :** "2900 Westside Pkwy , 30005"  
+
+  **Result:** "[{'Input':'2900 Westside Pkwy , 30005','State':'Georgia','Latitude':34.0860298,'Longitude':-84.2740195}]"
           
-  b) "Calcutta University" will return 
-            "[{'Input':'Calcutta University','State':'West Bengal','Latitude':22.5750862,'Longitude':88.3629188}]"
+- **Input :** "Calcutta University"
+
+  **Result:** "[{'Input':'Calcutta University','State':'West Bengal','Latitude':22.5750862,'Longitude':88.3629188}]"
           
-  c) "Orlando fl" will return
-            "[{'Input':'orlando fl','State':'Florida','Latitude':28.5383355,'Longitude':-81.3792365}]"
+- **Input :** "Orlando fl"
+
+  **Result:** "[{'Input':'orlando fl','State':'Florida','Latitude':28.5383355,'Longitude':-81.3792365}]"
 
 
 ## Steps Involved
